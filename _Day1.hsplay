@@ -1,0 +1,21 @@
+-- Haskell Playground 1.0
+main
+
+foldr (\c acc -> case compare (last c) (head c) of
+  GT -> acc + 1
+  _  -> acc) 0 (chunksOf 2 testInput)
+
+chunksOf 2 testInput
+
+
+greaterThanPrevCount testInput
+
+greaterThanPrevCount input
+
+greaterThanPrevCount []
+
+
+greaterThanPrevThreeSumCount testInput
+
+greaterThanPrevThreeSumCount input
+
