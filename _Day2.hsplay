@@ -1,0 +1,31 @@
+-- Haskell Playground 1.0
+words "forward 2"
+
+read "2" :: Int
+
+toMovement "forward 2"
+toMovement "up 3"
+toMovement "down 1"
+
+
+map toMovement input
+
+reverse $ map toMovement input
+
+C.digitToInt '2'
+
+
+finalPosition = move (map toMovement input)
+
+finalPosition
+
+finalDestination finalPosition
+
+
+move' (map toMovement input)
+
+finalPosition' = move' (map toMovement input)
+
+finalPosition'
+
+finalDestination' finalPosition'
