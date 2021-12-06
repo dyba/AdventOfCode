@@ -1,0 +1,104 @@
+-- Haskell Playground 1.0
+
+L.transpose testInput
+
+sample = head . L.transpose $ testInput
+
+sample
+
+head testInput
+
+bits = toBits . head $ testInput
+
+L.transpose $ map toBits testInput
+
+L.partition (== '0') sample
+
+
+mostCommonValue (toBits . head $ testInput)
+
+leastCommonValue (toBits . head $ testInput)
+
+
+tuples = map counts . L.transpose $ testInput
+
+tuples
+
+gammaInBinary tuples
+
+epsilonInBinary tuples
+
+
+(toDecimal . gammaInBinary $ tuples) * (toDecimal . epsilonInBinary $ tuples)
+
+toDecimal "1"
+
+
+toDecimal "0"
+
+toDecimal "10"
+
+toDecimal "11"
+
+toDecimal "100"
+
+toDecimal "101"
+
+toDecimal "01"
+
+toDecimal "01001"
+
+toDecimal "10110"
+
+
+(gammaRate realTuples) * (epsilonRate realTuples)
+
+
+-- bits by column
+mostCommonValue . head . L.transpose . (map toBits) $ testInput
+
+map toBits testInput
+
+
+head testInput
+
+testInput
+
+
+L.transpose testInput
+
+
+nthBits 2 $ (map toBits testInput)
+
+take 1 testInput
+
+
+
+
+(head . take 1 . (map toBits) $ testInput)
+
+
+nthBit 5 (head . take 1 . (map toBits) $ testInput)
+
+oxygenGeneratorRating (map toBits testInput)
+
+mostCommonValue . nthBits 1 . (map toBits) $ testInput
+
+
+filter (\bs -> True == nthBit 1 bs) . (map toBits) $ testInput
+
+
+length testInput
+
+
+
+seqToDecimal . oxygenGeneratorRating . (map toBits) $ testInput
+
+seqToDecimal . co2ScrubberRating . (map toBits) $ testInput
+
+
+
+lifeSupportRating testInput
+
+lifeSupportRating realInput
+
